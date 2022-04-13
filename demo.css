@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.note {
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+header {
+    background-color: rgb(12, 116, 81);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+header h1 {
+    margin-bottom: 20px;
+}
+nav{
+    background-color: rgb(40, 32, 32);
+    height: auto;
+    
+}
+nav ul {
+    display: flex;  
+    list-style-type: none;
+    
+}
+nav ul li {
+    padding: 15px 18px;
+}
+nav  a {
+    text-decoration: none;
+    color: white;  
+    
+    text-align: center;
+   
+}
+li:hover {
+    background-color: rgb(90, 87, 87);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 3;
+    background-color: #ccc;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.img {
+    height: 150px;
+    background-color: rgb(133, 185, 204);
+    padding: 5px 20px;
+}
+ h1, h2, p {
+     padding: 10px 0;
+ }
+ .more-img {
+    background-color: rgb(133, 185, 204);
+    padding: 15px;
+    margin-bottom: 20px;
+    
+ }
+article{
+    flex: 7;
+    background-color: rgb(194, 169, 218);
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:576px){
+    nav ul {
+        flex-direction: column;
+    }
+}
